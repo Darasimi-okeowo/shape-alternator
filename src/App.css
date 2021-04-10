@@ -4,4 +4,24 @@
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.App .box{
+  background-color: red;
+  width: 20rem;
+  height: 20rem;
+}
+
+.App .circle{
+  background-color: black;
+  width: 20rem;
+  height: 20rem;
+  border-radius: 50%;
+}
+
+button{
+  padding: 1rem;
 }
