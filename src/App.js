@@ -6,14 +6,14 @@ const App = () => {
   // for more than 2 shapes
   const[shape,setShape] = useState("box")
   const shapeChanger = () => {
-      const shapeDeterminant = new Array()
-      if (shapeDeterminant[0]) { setShape("box")};
-      if (shapeDeterminant[1]) { setShape("circle")};
-      if (shapeDeterminant[2]) { setShape("triangle")};
-      if (shapeDeterminant[3]) { setShape("parallelogram")};
-      if (shapeDeterminant[4]) { setShape("star-five")};
-      if (shapeDeterminant[5]) { setShape("hexagon")};
-      if (shapeDeterminant[6]) { setShape("heart")};
+      const shapeDeterminant = Math.floor(Math.random() * 7);
+      if (shapeDeterminant === 0) { setShape("box")};
+      if (shapeDeterminant === 1) { setShape("circle")};
+      if (shapeDeterminant === 2) { setShape("triangle")};
+      if (shapeDeterminant === 3) { setShape("parallelogram")};
+      if (shapeDeterminant === 4) { setShape("star-five")};
+      if (shapeDeterminant === 5) { setShape("hexagon")};
+      if (shapeDeterminant === 6) { setShape("heart")};
     }
 
 
